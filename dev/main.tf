@@ -10,7 +10,7 @@ module "my_ec2" {
     souce = "../modules/ec2"
     ec2_count = 1
     instance_type = "t2.micro"
-    subnet_id = ${module.vpc.subnet_id}
-    ami_id = 
+    subnet_id = "${module.vpc.subnet_id}""
+    ami_id = ""
 }
 
