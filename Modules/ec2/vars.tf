@@ -1,11 +1,11 @@
-variables "ami_id" {}
+variable "ami_id" {}
 
-variables "instance_type" {
+variable "instance_type" {
     default = "t2.micro"
 }
 
-variables "subnet_id" {}
+variable "subnet_id" {}
 
-variables "ec2_count" {
+variable "ec2_count" {
     default = "1"
 }
