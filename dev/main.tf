@@ -1,3 +1,7 @@
+provider "aws" {
+    region = eu-west-1
+}
+
 module "my_vpc" {
     source = "../modules/vpc"
     vpc_cidr = "192.168.0.0/16"
@@ -11,6 +15,6 @@ module "my_ec2" {
     ec2_count = 1
     instance_type = "t2.micro"
     subnet_id = "${module.my_vpc.subnet_id}"
-    ami_id = ""
+    ami_id = "ami-087cfb9686f1298e7"
 }
 
